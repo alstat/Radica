@@ -1,0 +1,16 @@
+{
+    "contents" : "u.test <- function(x, cells, aberrations, cell.dist) {\n  if (!is.data.frame(x)) \n    stop(\"x should be a data.frame class\")\n  if (!is.numeric(cell.dist))\n    stop(\"cell.dist should be a vector of columns of the cell distribution, in this form c(start, end).\")\n  \n  xmat <- as.matrix(x)\n  xmat.dist <- list(); disp.idx <- u.result <- u.decsn <- numeric();\n  for (i in 1L:nrow(x)) {\n    xmat.idx <- as.numeric(xmat[i, cell.dist[1L]:cell.dist[2L]][complete.cases(xmat[i, cell.dist[1L]:cell.dist[2L]])])\n    \n    for (j in 1L:length(xmat.idx))\n      xmat.dist[[j]] <- rep(j - 1L, xmat.idx[j])\n    \n    disp.idx[i]  <- var(unlist(xmat.dist)) / mean(unlist(xmat.dist))\n    if (aberrations[i] == 1) {\n      u.result[i] <- NA; u.decsn[i] <- NA\n    } else {\n      u.result[i] <- (disp.idx[i] - 1L) * sqrt((cells[i] - 1L) / (2L * (1L - (1L / aberrations[i])))) \n      if (u.result[i] < - 1.96)\n        u.decsn[i] <- \"under\"\n      if (u.result[i] > 1.96)\n        u.decsn[i] <- \"over\"\n      if ((u.result[i] >= - 1.96) && (u.result[i] <= 1.96))\n        u.decsn[i] <- \"normal\"\n    }\n  }\n  x$disp_idx <- disp.idx; x$u_test <- u.result; x$u_decsn <- u.decsn\n  return(x)\n}",
+    "created" : 1402118750664.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1470317960",
+    "id" : "CB505869",
+    "lastKnownWriteTime" : 1402057929,
+    "path" : "~/Documents/Files/R Files/Projects/RSACA/R/u.test.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

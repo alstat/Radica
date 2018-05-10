@@ -1,0 +1,16 @@
+{
+    "contents" : "Radica: Radiation Induced Chromosome Aberrations\n============\nRadica is an R package for statistical analysis for chromosome aberrations. To install this package, simply run the following\n```{coffee}\nlibrary(devtools)\ninstall_github(repo = \"RSACA\", user = \"alstat\")\n```\n\n### Authors\n 1. Al-Ahmadgaid B. Asaad <<alstated@gmail.com>> (maintainer)\n 2. Herbert Braselmann <<braselm@helmholtz-muenchen.de>>\n \n---\nNote: This package is underdevelopment.",
+    "created" : 1402070129349.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2918239737",
+    "id" : "165DB9AC",
+    "lastKnownWriteTime" : 1402110190,
+    "path" : "~/Documents/Files/R Files/Projects/Radica/README.md",
+    "project_path" : "README.md",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "markdown"
+}

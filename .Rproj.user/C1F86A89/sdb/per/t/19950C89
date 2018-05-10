@@ -1,0 +1,16 @@
+{
+    "contents" : "Package: Radica\nType: Package\nTitle: Radiation Induced Chromosome Aberrations\nVersion: 1.0\nDate: 2014-06-04\nAuthor: Al-Ahmadgaid B. Asaad\nMaintainer: Al-Ahmadgaid B. Asaad <alstated@gmail.com>\nDescription: An R package for statistical analysis of chromosomal aberration.\nLicense: GPL-2\nLazyData: true\n",
+    "created" : 1402070052884.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2042049912",
+    "id" : "19950C89",
+    "lastKnownWriteTime" : 1402070159,
+    "path" : "~/Documents/Files/R Files/Projects/Radica/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "dcf"
+}

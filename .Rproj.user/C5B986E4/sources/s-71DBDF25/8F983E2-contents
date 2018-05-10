@@ -1,0 +1,29 @@
+library(magrittr)
+library(dplyr)
+library(ggplot2)
+
+y1 <- c(28, 28, 28, 22, 22, 22, 23, 28, 23, 23, 23, 23)
+y2 <- c(rnorm(26), rnorm(26), rnorm(26))
+x <- c("Setup B", "Setup C", "Setup D") %>% rep(each = 26)
+indoor_dat <- data.frame(dependent = y1, independent = x)
+outdoor_dat <- data.frame("dependent ii" = y2, "independent ii" = x)
+p1 <- ggplot(indoor_dat, aes(x = independent, y = dependent)) +
+  geom_boxplot(fill = c("#cb4b16", "#268bd2", "#859900", "#6c71c4"), colour = c("#cb4b16", "#268bd2", "#859900", "#6c71c4")) +
+  ggtitle(label = "Indoor Data Boxplot",  subtitle = "Empirical Distribution of Caulerpa Racemosa on Four Levels") +
+  #theme_fivethirtyeight() +
+  theme(axis.text.x = element_text(colour = c("#cb4b16", "#268bd2", "#859900", "#6c71c4")))
+with(outdoor_dat, dependent)
+p2 <- ggplot(outdoor_dat, aes_string(x = "independent.ii", y = "dependent.ii")) +
+  geom_boxplot(fill = c("#268bd2", "#859900", "#6c71c4"),
+               colour = c("#268bd2", "#859900", "#6c71c4")) +
+  ggtitle(label = "Outdoor Data Boxplot",
+          subtitle = "Empirical Distribution of Caulerpa Racemosa on Four Levels") +
+  #theme_fivethirtyeight() +
+  theme(axis.text.x = element_text(colour = c("#cb4b16", "#268bd2", "#859900", "#6c71c4")))
+
+
+in_model <- lm(Dependent ~ Independent, indoor_dat)
+anova(in_model)
+
+outdoor_dat
+

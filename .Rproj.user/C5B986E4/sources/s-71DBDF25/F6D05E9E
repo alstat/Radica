@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1515202808635.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F6D05E9E",
+    "lastKnownWriteTime" : 6,
+    "last_content_update" : 1515202808635,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "6910D4FF",
+        "caption" : "quiz",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=quiz&cache_key=6910D4FF",
+        "displayedObservations" : "16",
+        "environment" : "",
+        "object" : "quiz",
+        "preview" : "0",
+        "totalObservations" : "16",
+        "variables" : "11"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "Dose Cells Dice   X0  X1 X2 X3 X4 X5\n0 1251\t1\t1250\t1\t0\t0\t0\t0\n0.1 1473\t2\t1471\t2\t0\t0\t0\t0\n0.25 824\t4\t820\t4\t0\t0\t0\t0\n0.5\t1011\t4\t1007\t4\t0\t0\t0\t0\n0.75 1168\t13\t1155\t13\t0\t0\t0\t0\n1\t693\t13\t681\t11\t1\t0\t0\t0\n2\t927\t41\t886\t41\t0\t0\t0\t0\n4\t1244\t142\t1128\t94\t18\t4\t0\t0",
+    "created" : 1456901127149.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1264634889",
+    "id" : "3AC84D20",
+    "lastKnownWriteTime" : 1457308578,
+    "last_content_update" : 0,
+    "path" : "~/Documents/PNRI5d23.txt",
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}
